@@ -1,0 +1,90 @@
+﻿{
+  "output_file": "settings.json",
+    "OnlyLive": {
+    "type": "checkbox",
+    "value": false,
+  	"label": "Only when live",
+    "tooltip": "Command is only active when stream is live",
+  	"group": "General"
+  },
+    "Command": {
+    "type": "textbox",
+    "value": "!tweet",
+  	"label": "Command Name",
+    "tooltip": "The command the post the tweet message/link",
+  	"group": "General"
+  },
+    "EditCommand": {
+    "type": "textbox",
+    "value": "!edittweet",
+  	"label": "Command Name",
+    "tooltip": "The command to edit the link",
+  	"group": "General"
+  },
+    "Permission": {
+    "type": "dropdown",
+    "value": "Caster",
+    "items": ["Everyone","Regular","Subscriber","GameWisp Subscriber","User_Specific","Min_Rank","Min_Points","Min_Hours","Moderator","Editor","Caster"],
+    "label": "Permission level",
+    "tooltip": "Set the permission level for the command",
+    "group": "General"
+  },
+    "PermissionInfo": {
+    "type": "textbox",
+    "value": "",
+    "label": "Permission level info",
+    "tooltip": "Set the user, rank or tier for permission",
+    "group": "General"
+  },
+    "UseCD": {
+    "type": "checkbox",
+    "value": false,
+  	"label": "Use Cooldown Messages",
+    "tooltip": "Enable/Disable cooldown messages",
+  	"group": "Cooldown"
+  },
+    "Cooldown": {
+    "type": "numberbox",
+  	"label": "Cooldown (seconds)",
+    "value": 0,
+    "tooltip": "Cooldown in seconds.",
+  	"group": "Cooldown"
+  },
+   "OnCooldown": {
+    "type": "textbox",
+    "value": "{0} the command is still on cooldown for {1} seconds!",
+  	"label": "Cooldown Response",
+    "tooltip": "The message that the bot will display when the command is on cooldown. \r\n {0} = user \r\n {1} = time remaining",
+  	"group": "Cooldown"
+  },
+    "UserCooldown": {
+    "type": "numberbox",
+  	"label": "User Cooldown (seconds)",
+    "value": 10,
+    "tooltip": "User cooldown in seconds.",
+  	"group": "Cooldown"
+  },
+    "OnUserCooldown": {
+    "type": "textbox",
+    "value": "{0} the command is still on user cooldown for {1} seconds!",
+  	"label": "User Cooldown Response",
+    "tooltip": "The message that the bot will display when the command is on user cooldown. \r\n {0} = user \r\n {1} = time remaining",
+   	"group": "Cooldown"
+  },
+    "TweetMessage": {
+    "type": "textbox",
+    "value": "You can help the stream by retweeting/liking the tweet saying we went live! Every multiple of 10 RTs gives 25 Coins to the rest of the stream! || ",
+    "label": "Message to be sent with link",
+    "tooltip": "The unchanging message you want to send before the link",
+    "group": "Responses"
+  },
+    "timer": {
+    "type": "numberbox",
+  	"label": "Send tweet message on timer (seconds)",
+    "value": 600,
+    "tooltip": "Set to 0 to disable timer",
+  	"group": "Responses"
+  },
+
+
+}

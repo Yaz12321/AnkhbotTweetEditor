@@ -131,7 +131,7 @@ def Execute(data):
 
         
         #check if user has permission
-        if Parent.HasPermission(data.User, MySettings.Permission, MySettings.PermissionInfo):
+        if True:
             
             #check if command is on cooldown
             if Parent.IsOnCooldown(ScriptName,MySettings.Command) or Parent.IsOnUserCooldown(ScriptName,MySettings.Command,data.User):
